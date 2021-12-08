@@ -21,11 +21,11 @@ public class Main {
 		constructLin.updateScores();
 		constructTimer.stop();
 
-		constructTimer.start();
+		// constructTimer.start();
 		constructBST.initDocHashes();
 		constructBST.initMasterHash();
 		constructBST.updateScores();
-		constructTimer.stop();
+		// constructTimer.stop();
 
 		// demonstrating use of function in SearchEngine Class
 		// +++++++++++++++++++++++++++++++++++++++
@@ -37,9 +37,9 @@ public class Main {
 		// constructBST.getDocHashes());
 
 		// these will appear at very top of Console out
-		engine.search("Jones");
-		engine.search("Jennyanydots");
-		engine.search("home");
+		// engine.search("Jones");
+		// engine.search("Jennyanydots");
+		// engine.search("home");
 
 		// hash top 10s
 		// these will also appear at very top of Console out, but under the others
@@ -62,8 +62,8 @@ public class Main {
 
 		StopWatch Searchtimer = new StopWatch();
 
-		// Object[] masterArray = constructLin.getMasterHash().getAllKeys().toArray();
-		Object[] masterArray = constructBST.getMasterHash().getAllKeys().toArray();
+		Object[] masterArray = constructLin.getMasterHash().getAllKeys().toArray();
+		// Object[] masterArray = constructBST.getMasterHash().getAllKeys().toArray();
 
 		Random r = new Random();
 		int range = masterArray.length;
